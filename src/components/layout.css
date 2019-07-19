@@ -1,6 +1,6 @@
 :root {
-    --mainBrown: #2d1ef1;
-    --mainYellow: #ff9e09;
+    --mainBrown: #2d1e1f;
+    --mainYellow: rgb(255, 158, 9);
     --mainGrey: #ece8dc;
     --mainWhite: #ffffff;
     --mainDark: #222222;
@@ -17,11 +17,55 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.25rem !important; 
 }
 
-.text-yellow 
-    color: (--mainYellow);
+.text-yellow {
+    color: var(--mainYellow);
+}
+
 
 .cart-icon {
     cursor: pointer;
     color: var(--mainYellow);
     font-size: 2rem;
 }
+
+.default-background, .about-background  {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 158, 9, 0.5)), to(rgba(255, 158, 9, 0.5))) ;
+    background: linear-gradient(to bottom right, rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) ;
+    background-position: center;
+    background-size: cover
+}
+
+.about-background {
+    min-height: 60vh;
+   
+
+}
+
+.btn-yellow {
+    color: var(--mainYellow);
+    border-color: var(--mainYellow);
+    -webkit-transition: all 0.2 ease;
+    -webkit-transition: all 0.2s ease;
+    -webkit-transition: all 0.9s ease;
+    transition: all 0.2s ease
+}
+
+.btn-yellow:hover {
+    background: var(--mainYellow);
+    color: var(--mainBrown);
+}
+
+.footer {
+    background: var(--mainBrown);
+}
+
